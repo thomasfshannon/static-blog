@@ -1,14 +1,18 @@
 <template>
-  <div>
+  <div class="post-container">
     <component :is="singlePostComponent" />
   </div>
 </template>
+<style scoped>
+  .post-container {
+    padding: 1rem 3rem;
+  }
+</style>
 <script>
 import Prism from 'prismjs'
 export default {
   async asyncData({ params }) {
     try {
-      console.info(params.slug);
       let post = await import(`~/content/${params.slug}.md`);
       return {
         title: post.attributes.title,

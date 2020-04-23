@@ -1,8 +1,18 @@
 <template>
   <div>
+    <v-nav></v-nav>
     <nuxt />
   </div>
 </template>
+
+<script>
+import VNav from '../components/layout/Nav'
+export default {
+  components: {
+    VNav,
+  }
+}
+</script>
 
 <style>
 html {
@@ -22,6 +32,11 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .button--green {
