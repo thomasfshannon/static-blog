@@ -1,9 +1,9 @@
 <template>
     <div class="post-container">
-        <h1>My blog posts</h1>
+        <h1>Posts</h1>
         <ul class="post-list">
             <li class="post-list-item" v-for="post in posts" :key="post.attributes.title">
-                <nuxt-link :to="getPermalink(post)">{{ post.attributes.title }}</nuxt-link>
+                <nuxt-link :to="getPermalink(post)">{{ post.attributes.title }} &rsaquo;</nuxt-link>
             </li>
         </ul>
     </div>
