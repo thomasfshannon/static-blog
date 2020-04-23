@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-            <li><nuxt-link to="posts">blog</nuxt-link></li>
+            <li><nuxt-link to="/posts">blog</nuxt-link></li>
         </ul>
     </nav>
 </template>
